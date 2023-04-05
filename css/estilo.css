@@ -1,0 +1,104 @@
+body {
+    font-family: system-ui;
+    background-color: #dcdcdc;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+#ARuaeNoiz {
+    
+    max-width: 240px;
+    max-height: 80px;
+    box-sizing: border-box;
+    justify-content: center;  
+
+}
+
+.wrapper {
+    padding-top: 10px;
+    width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .menu ul {
+    margin-left: 0;
+    list-style: none;
+    text-align: center;
+  }
+  .menu ul li {
+    display: inline-block;
+  }
+  .menu ul li a {
+    display: block;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .menu ul li a:hover {
+    background: rgb(255, 225, 2);
+    color: #000;
+  }
+
+img {
+    width: 350px;
+    height: 350px;
+    margin-left: 40px;
+    border-radius: 50%;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    justify-content: center;
+    padding: 50px 10px 10px 50px;
+    margin: auto;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 26px;
+}
+
+#lateraldireita {
+    width: 50%;
+    min-width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding-left: 60px;
+}
+
+#lateralesquerda {
+    width: 50%;
+    min-width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    float: right;
+    padding-right: 150px;
+}
+
+footer {
+    font-size: 12px;
+    color: #000;
+    line-height: 1.58;
+    text-align: center;
+}
