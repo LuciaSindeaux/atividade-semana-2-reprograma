@@ -6,52 +6,62 @@ body {
 }
 
 header {
-    
+
     background-color: black;
     color: #fff;
-    text-align: center;
     padding-top: 5px;
-
 }
 
 #ARuaeNoiz {
-    
-    max-width: 240px;
-    max-height: 80px;
-    box-sizing: border-box;
-    justify-content: center;  
+    display: inline-block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: normal;
 
 }
 
 .wrapper {
     padding-top: 10px;
-    width: 500px;
     margin: 0 auto;
     overflow: hidden;
-  }
-  
-  .menu ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.menu ul {
     margin-left: 0;
     list-style: none;
     text-align: center;
-  }
-  .menu ul li {
-    display: inline-block;
-  }
-  .menu ul li a {
-    display: block;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
     padding: 10px;
     color: rgb(255, 255, 255);
     text-decoration: none;
-  }
-  .menu ul li a:hover {
+    display: inline;
+}
+
+.menu ul li a:hover {
     background: rgb(255, 225, 2);
     color: #000;
-  }
+    display: inline-block;
+}
 
-img {
-    width: 350px;
-    height: 350px;
+.emicida {
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    max-width: 20%;
     margin-left: 40px;
     border-radius: 50%;
 }
@@ -63,10 +73,9 @@ img {
 
 p {
     justify-content: center;
-    padding: 50px 10px 10px 50px;
     margin: auto;
     text-align: justify;
-    font-size: 16px;
+    font-size: 1.2em;
     line-height: 22px;
 }
 
@@ -74,31 +83,89 @@ h1 {
     padding-top: 10px;
     padding-bottom: 5px;
     text-align: center;
-    font-size: 26px;
+    font-size: 2em;
 }
 
-#lateraldireita {
-    width: 50%;
-    min-width: 250px;
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-    padding-left: 60px;
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: normal;
 }
 
-#lateralesquerda {
-    width: 50%;
-    min-width: 250px;
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-    float: right;
-    padding-right: 150px;
+#lateraldireita:nth-child(1) {
+    font-size: 1.2em;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding-left: 3%;
+}
+
+#lateralesquerda:nth-child(2) {
+    font-size: 1.2em;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding-left: 3%;    
 }
 
 footer {
-    font-size: 12px;
+    font-size: 1em;
     color: #000;
     line-height: 1.58;
     text-align: center;
+}
+
+@media screen and (max-width:800px) {
+    .emicida {
+        display: flex;
+        margin: auto;
+        max-width: 50%;
+        justify-content: center;
+    }
+
+    #container {
+        display: inline-block;
+        margin: auto;
+        justify-content: center;
+    }
+
+    #ARuaeNoiz {
+        display: inline-block;
+        margin: auto;
+        align-items: center;
+        max-width: 40%;
+    }
+
+    .wrapper {
+        margin: 0;
+        justify-content: center;
+    }
+
+
+    header {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+
+    menu ul li a {
+        justify-content: center;
+        margin: auto;
+    }
+
+    footer {
+        justify-content: center;
+        font-size: 0.7em;
+
+    }
 }
